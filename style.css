@@ -1,0 +1,30 @@
+/* Mode contraste élevé */
+.contrast {
+  background-color: black !important;
+  color: yellow !important;
+}
+
+.contrast h1, 
+.contrast h2, 
+.contrast h3, 
+.contrast h4, 
+.contrast h5, 
+.contrast h6, 
+.contrast p, 
+.contrast li, 
+.contrast a, 
+.contrast span {
+  color: yellow !important;
+}
+
+/* Liens en cyan dans ce mode */
+.contrast a {
+  color: cyan !important;
+}
+
+/* Pour garder les boutons lisibles */
+.contrast button {
+  background-color: black !important;
+  color: yellow !important;
+  border: 1px solid yellow !important;
+}

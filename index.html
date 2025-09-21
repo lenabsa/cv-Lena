@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio – Lena Bessa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- ===== Barre d'accessibilité (repliée) ===== -->
+  <div id="accessibility-wrapper" class="fixed right-4 top-1/3 z-50">
+    <!-- Bouton principal -->
+    <button id="acc-toggle"
+      class="px-4 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 focus:outline-none"
+      aria-expanded="false" aria-controls="acc-panel" aria-label="Ouvrir le menu d'accessibilité">
+      ♿ Accessibilité
+    </button>
+
+    <!-- Panneau caché -->
+    <div id="acc-panel" class="mt-3 hidden bg-white shadow-lg rounded-lg p-3 w-44 space-y-2">
+      <button onclick="increaseFont()" class="w-full px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">A+</button>
+      <button onclick="decreaseFont()" class="w-full px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">A-</button>
+      <button onclick="toggleContrast()" class="w-full px-3 py-2 bg-gray-800 text-white rounded hover:bg-black">Contraste</button>
+      <button onclick="resetAccessibility()" class="w-full px-3 py-2 bg-red-600 text-white rounded hover:bg-red-700">Réinitialiser</button>
+    </div>
+  </div>
+
+  <!-- ===== Contenu de la page ===== -->
+  <div id="page-root">
+    <!-- HERO -->
+    <section class="flex flex-col md:flex-row items-center justify-center text-center md:text-left bg-gradient-to-r from-indigo-500 to-blue-600 text-white py-16 px-6">
+      <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
+        <img src="icons/IMG-lena.JPG" alt="Photo de Lena Bessa" class="w-40 h-40 rounded-full shadow-lg object-cover border-4 border-white">
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-5xl font-bold">Lena Bessa</h1>
+        <p class="mt-4 text-lg md:text-2xl">Étudiante en Master 2 MIASHS · Technologie et Handicap</p>
+        <p class="mt-2 max-w-xl">Passionnée par l’impact des nouvelles technologies sur l’inclusion et l’accessibilité.</p>
+        <div class="mt-6 space-x-4">
+          <a href="#projets" class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold shadow hover:bg-gray-200">Voir mes projets</a>
+          <a href="icons/Lena Bessa | cv.pdf" target="_blank" class="px-6 py-3 border border-white rounded-lg font-semibold">📄 Télécharger mon CV</a>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- À propos -->
+  <section id="about" class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-4">À propos</h2>
+    <p>
+      Étudiante en Master Technologie et Handicap, je suis passionnée par l’impact des nouvelles technologies pour répondre aux défis de l’inclusion et de l’accessibilité.
+      Mon objectif est de renforcer mon expertise en développement informatique pour me spécialiser dans ce domaine en pleine évolution.
+      Engagée et curieuse, je suis motivée à contribuer à des projets qui font avancer l’accessibilité numérique, 
+      et particulièrement intéressée par les <strong>aides techniques de compensation</strong> telles que la 
+      <strong>Communication Alternative et Améliorée (CAA)</strong> et d’autres outils innovants favorisant l’autonomie des personnes en situation de handicap.
+    </p>
+  </section>
+
+
+  <!-- Compétences -->
+  <section id="skills" class="bg-white py-16 px-6">
+    <h2 class="text-3xl font-bold mb-6 text-center">Compétences</h2>
+    <div class="grid grid-cols-3 md:grid-cols-6 gap-6 text-center">
+      <div><img src="icons/html5.svg" alt="HTML" class="mx-auto w-12"><p>HTML</p></div>
+      <div><img src="icons/css.svg" alt="CSS" class="mx-auto w-12"><p>CSS</p></div>
+      <div><img src="icons/javascript.svg" alt="JS" class="mx-auto w-12"><p>JavaScript</p></div>
+      <div><img src="icons/java.svg" alt="Java" class="mx-auto w-12"><p>Java</p></div>
+      <div><img src="icons/python.svg" alt="Python" class="mx-auto w-12"><p>Python</p></div>
+      <div><img src="icons/symfony.svg" alt="Symfony" class="mx-auto w-12"><p>Symfony</p></div>
+      <div><img src="icons/nodejs.svg" alt="Node.js" class="mx-auto w-12"><p>Node.js</p></div>
+      <div><img src="icons/mysql.svg" alt="MariaDB" class="mx-auto w-12"><p>MariaDB</p></div>
+      <div><img src="icons/sqlite.svg" alt="SQLite" class="mx-auto w-12"><p>SQLite</p></div>
+      <div><img src="icons/unity.svg" alt="Unity" class="mx-auto w-12"><p>Unity</p></div>
+      <div><img src="icons/git.svg" alt="Git" class="mx-auto w-12"><p>Git</p></div>
+      <div><img src="icons/case.png" alt="UML" class="mx-auto w-12"><p>UML</p></div>
+      <div><img src="icons/latex.svg" alt="LaTeX" class="mx-auto w-12"><p>LaTeX</p></div>
+      <div><img src="icons/jupyter.svg" alt="Jupyter Notebook" class="mx-auto w-12"><p>Jupyter Notebook</p></div>
+      <div><img src="icons/androidstudio.svg" alt="Android Studio" class="mx-auto w-12"><p>Android Studio</p></div>
+      <div><img src="icons/angular.png" alt="Angular" class="mx-auto w-12"><p>Angular</p></div>
+      <div><img src="icons/c.svg" alt="Langage C" class="mx-auto w-12"><p>C</p></div>
+      <div><img src="icons/livecode.png" alt="LiveCode" class="mx-auto w-12"><p>LiveCode</p></div>
+      <div><img src="icons/figma.svg" alt="Figma" class="mx-auto w-12"><p>Figma</p></div>
+      <div><img src="icons/openscad.svg" alt="OpenSCAD" class="mx-auto w-12"><p>OpenSCAD</p></div>
+  </div>
+    </div>
+  </section>
+
+
+  <!-- Langues -->
+<section id="langues" class="bg-gray-50 py-16 px-6">
+  <h2 class="text-3xl font-bold mb-6 text-center">Langues</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
+
+    <div class="p-6 bg-white rounded shadow">
+      <img src="icons/frr.jpg" alt="Français" class="mx-auto w-12 mb-3">
+      <h3 class="font-semibold">Français</h3>
+      <p class="text-sm text-gray-600">Langue maternelle</p>
+    </div>
+
+    <div class="p-6 bg-white rounded shadow">
+      <img src="icons/enn.webp" alt="Anglais" class="mx-auto w-12 mb-3">
+      <h3 class="font-semibold">Anglais</h3>
+      <p class="text-sm text-gray-600">Niveau avancer</p>
+    </div>
+
+    <div class="p-6 bg-white rounded shadow">
+      <img src="icons/lsf.jpg" alt="Langue des signes française" class="mx-auto w-12 mb-3">
+      <h3 class="font-semibold">Langue des signes français</h3>
+      <p class="text-sm text-gray-600">Niveau intermédiaire</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Projets -->
+<section id="projets" class="max-w-5xl mx-auto py-16 px-6">
+  <h2 class="text-3xl font-bold mb-6 text-center">Projets</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="p-6 bg-gray-100 rounded shadow">
+      <h3 class="font-semibold">Application Java – Clavier directionnel CAA</h3>
+      <p class="text-sm text-gray-600">Université Paris 8 Vincennes</p>
+      <p class="mt-2">Création d’un clavier directionnel accessible (CAA) en Java Swing avec synthèse vocale MaryTTS.</p>
+    </div>
+
+    <div class="p-6 bg-gray-100 rounded shadow">
+      <h3 class="font-semibold">Application de guidage en ligne – Accessibilité PMR</h3>
+      <p class="text-sm text-gray-600">Université Paris 8 Vincennes</p>
+      <p class="mt-2">Développement d’un site et application web pour guider les personnes à mobilité réduite sur le campus.</p>
+    </div>
+
+    <div class="p-6 bg-gray-100 rounded shadow">
+      <h3 class="font-semibold">Jeu vidéo Tetris – Android Studio</h3>
+      <p class="text-sm text-gray-600">Université de Tours – Antenne de Blois</p>
+      <p class="mt-2">Développement d’une version du jeu Tetris en Java via Android Studio.</p>
+    </div>
+
+    <div class="p-6 bg-gray-100 rounded shadow">
+      <h3 class="font-semibold">Site Web de chat en ligne (type Discord)</h3>
+      <p class="text-sm text-gray-600">Université de Tours – Antenne de Blois</p>
+      <p class="mt-2">Réalisation d’un site web interactif permettant une communication en ligne en temps réel.</p>
+    </div>
+
+    <div class="p-6 bg-gray-100 rounded shadow">
+      <h3 class="font-semibold">Application mobile – TASK</h3>
+      <p class="text-sm text-gray-600">Université de Tours – Antenne de Blois</p>
+      <p class="mt-2">Développement d’une application mobile de gestion de tâches avec interface intuitive.</p>
+    </div>
+
+    <div class="p-6 bg-gray-100 rounded shadow">
+      <h3 class="font-semibold">Site Web dynamique – Freelance</h3>
+      <p class="text-sm text-gray-600">Projet personnel</p>
+      <p class="mt-2">Création d’un site web dynamique complet dans le cadre d’un travail freelance.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-50 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact</h2>
+    <p>Email : <a href="mailto:lenabessa02@gmail.com" class="text-blue-600">lenabessa02@gmail.com</a></p>
+    <p>LinkedIn : <a href="https://linkedin.com/in/lena-bessa-8b0323251" target="_blank" class="text-blue-600">linkedin.com/in/lena-bessa</a></p>
+    <p>GitHub : <a href="https://github.com/lenabsa" target="_blank" class="text-blue-600">github.com/lenabsa</a></p>
+  </section>
+
+   <footer class="py-6 text-center text-gray-500 text-sm">
+      © <span id="year"></span> Lena Bessa – Portfolio
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
