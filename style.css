@@ -1,30 +1,47 @@
-/* Mode contraste élevé */
-.contrast {
+/* ===== MODE SOMBRE ===== */
+#page-root.darkmode {
+  background-color: #121212 !important;
+  color: #eaeaea !important;
+}
+
+#page-root.darkmode section,
+#page-root.darkmode div,
+#page-root.darkmode header,
+#page-root.darkmode footer {
+  background-color: #1e1e1e !important;
+  color: #eaeaea !important;
+}
+
+#page-root.darkmode a {
+  color: #66b2ff !important;
+}
+
+#page-root.darkmode button {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 1px solid #666 !important;
+}
+
+/* ===== CONTRASTE ÉLEVÉ ===== */
+#page-root.contrast {
   background-color: black !important;
-  color: yellow !important;
+  color: white !important;
 }
 
-.contrast h1, 
-.contrast h2, 
-.contrast h3, 
-.contrast h4, 
-.contrast h5, 
-.contrast h6, 
-.contrast p, 
-.contrast li, 
-.contrast a, 
-.contrast span {
-  color: yellow !important;
-}
-
-/* Liens en cyan dans ce mode */
-.contrast a {
-  color: cyan !important;
-}
-
-/* Pour garder les boutons lisibles */
-.contrast button {
+#page-root.contrast section,
+#page-root.contrast div,
+#page-root.contrast header,
+#page-root.contrast footer {
   background-color: black !important;
-  color: yellow !important;
-  border: 1px solid yellow !important;
+  color: white !important;
+}
+
+#page-root.contrast a {
+  color: #00BFFF !important; /* bleu clair lisible */
+}
+
+#page-root.contrast button {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white !important;
 }

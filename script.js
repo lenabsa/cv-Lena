@@ -1,5 +1,6 @@
 let fontSize = 100;
-let highContrast = false;
+let isDark = false;
+let isContrast = false;
 
 const pageRoot = document.getElementById('page-root');
 const toggleBtn = document.getElementById('acc-toggle');
@@ -17,18 +18,37 @@ function decreaseFont() {
   pageRoot.style.fontSize = fontSize + '%';
 }
 
-// Contraste (sur tout le contenu de la page)
+// Mode sombre
+function toggleDarkMode() {
+  isDark = !isDark;
+  if (isDark) {
+    pageRoot.classList.add("darkmode");
+    pageRoot.classList.remove("contrast");
+    isContrast = false;
+  } else {
+    pageRoot.classList.remove("darkmode");
+  }
+}
+
+// Contraste élevé
 function toggleContrast() {
-  highContrast = !highContrast;
-  document.body.classList.toggle("contrast", highContrast);
+  isContrast = !isContrast;
+  if (isContrast) {
+    pageRoot.classList.add("contrast");
+    pageRoot.classList.remove("darkmode");
+    isDark = false;
+  } else {
+    pageRoot.classList.remove("contrast");
+  }
 }
 
 // Réinitialiser
 function resetAccessibility() {
   fontSize = 100;
-  highContrast = false;
+  isDark = false;
+  isContrast = false;
   pageRoot.style.fontSize = '100%';
-  pageRoot.classList.remove('contrast');
+  pageRoot.classList.remove('darkmode', 'contrast');
   closePanel();
 }
 
@@ -44,19 +64,17 @@ function closePanel() {
 }
 
 toggleBtn.addEventListener('click', (e) => {
-  e.preventDefault(); // sécurité anti-sauts
+  e.preventDefault();
   const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
   expanded ? closePanel() : openPanel();
 });
 
-// Fermer si clic en dehors
 document.addEventListener('click', (e) => {
   if (!panel.contains(e.target) && !toggleBtn.contains(e.target)) {
     closePanel();
   }
 });
 
-// Échap pour fermer
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closePanel();
 });
