@@ -1,163 +1,58 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio – Lena Bessa | Accessibilité & IHM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="bg-gray-50 text-gray-900">
-
-<!-- NAV -->
-<nav class="fixed top-0 w-full bg-white shadow z-40">
-  <div class="max-w-6xl mx-auto flex justify-between p-4">
-    <span class="font-bold">Lena Bessa</span>
-    <div class="space-x-4">
-      <a href="#about">À propos</a>
-      <a href="#projets">Projets</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<div id="page-root" class="pt-20">
-
-<!-- HERO -->
-<section class="text-center bg-gradient-to-r from-indigo-600 to-blue-700 text-white py-20">
-  <img src="icons/IMG-lena.JPG" class="mx-auto w-40 h-40 rounded-full border-4 border-white mb-6">
-  <h1 class="text-4xl font-bold">Lena Bessa</h1>
-  <p class="mt-4 text-xl">Technologies du handicap · IHM · Accessibilité</p>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="max-w-4xl mx-auto py-16 px-6">
-<h2 class="text-3xl font-bold mb-4">À propos</h2>
-<p>
-Je développe des systèmes numériques accessibles intégrant cognition, interaction humain-machine et technologies de compensation. 
-Mon objectif est de concevoir des outils favorisant l’autonomie des personnes en situation de handicap.
-</p>
-</section>
-
-<!-- TIMELINE -->
 <section id="projets" class="py-20 bg-gray-50">
-<h2 class="text-3xl font-bold text-center mb-16">Parcours & Projets</h2>
+<h2 class="text-3xl font-bold text-center mb-16">Timeline des projets</h2>
 
-<div class="relative max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto relative">
 
-<div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-blue-500 h-full"></div>
+<!-- Ligne -->
+<div class="absolute top-1/2 left-0 w-full h-1 bg-blue-500"></div>
 
-<!-- PROJET 1 -->
-<div class="timeline-item">
-  <div class="timeline-text right">
-    <h3>Clavier CAA directionnel</h3>
-    <p class="date">2025</p>
-    <p>
-    Conception d’un clavier accessible basé sur un système de balayage automatique.
-    Implémentation d’une navigation arborescente via une structure de nœuds.
-    Intégration de synthèse vocale MaryTTS.
-    </p>
-    <ul>
-      <li>Accessibilité moteur sévère</li>
-      <li>Optimisation du temps de sélection</li>
-      <li>Interface sans pop-up</li>
-    </ul>
-  </div>
+<!-- Timeline -->
+<div class="relative flex justify-between items-center">
 
-  <div class="timeline-dot"></div>
-
-  <div class="timeline-img left">
-    <img src="images/clavier.jpg">
-  </div>
-</div>
-
-<!-- PROJET 2 -->
-<div class="timeline-item">
-  <div class="timeline-img right">
-    <img src="images/guidage.jpg">
-  </div>
-
-  <div class="timeline-dot"></div>
-
-  <div class="timeline-text left">
-    <h3>Application de guidage PMR</h3>
-    <p class="date">2025</p>
-    <p>
-    Développement d’un système de navigation accessible sur campus universitaire.
-    Gestion des ascenseurs, obstacles et accessibilité en temps réel.
-    </p>
-    <ul>
-      <li>Symfony + API</li>
-      <li>Base de données géographiques</li>
-      <li>Interface mobile-first</li>
-    </ul>
-  </div>
-</div>
-
-<!-- PROJET 3 -->
-<div class="timeline-item">
-  <div class="timeline-text right">
-    <h3>CarryBot – Robot d’assistance</h3>
-    <p class="date">2026</p>
-    <p>
-    Conception d’un robot mobile pour assistance au transport.
-    Développement d’un prototype fonctionnel en environnement intérieur.
-    </p>
-    <ul>
-      <li>Robotique embarquée</li>
-      <li>Interaction humain-machine</li>
-      <li>Autonomie assistée</li>
-    </ul>
-  </div>
-
-  <div class="timeline-dot"></div>
-
-  <div class="timeline-img left">
-    <img src="images/robot.jpg">
-  </div>
-</div>
-
-<!-- PROJET 4 -->
-<div class="timeline-item">
-  <div class="timeline-img right">
+<!-- 2024 -->
+<div class="timeline-block" style="left: 0%;">
+  <div class="dot"></div>
+  <div class="card">
     <img src="images/chat.jpg">
-  </div>
-
-  <div class="timeline-dot"></div>
-
-  <div class="timeline-text left">
-    <h3>Chat en ligne temps réel</h3>
-    <p class="date">2024</p>
-    <p>
-    Développement d’une plateforme de communication en ligne.
-    Gestion des messages en temps réel et des utilisateurs.
-    </p>
-    <ul>
-      <li>WebSocket</li>
-      <li>Temps réel</li>
-      <li>Interface dynamique</li>
-    </ul>
+    <h3>Chat temps réel</h3>
+    <p>Plateforme de communication en ligne avec gestion temps réel.</p>
+    <span>2024</span>
   </div>
 </div>
 
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-16 text-center">
-<h2 class="text-3xl font-bold mb-6">Contact</h2>
-<p>Email : lenabessa02@gmail.com</p>
-<p>GitHub : github.com/lenabsa</p>
-</section>
-
-<footer class="text-center py-6 text-gray-500">
-© 2026 Lena Bessa
-</footer>
-
+<!-- 2025 - CAA -->
+<div class="timeline-block" style="left: 40%;">
+  <div class="dot"></div>
+  <div class="card">
+    <img src="images/clavier.jpg">
+    <h3>Clavier CAA</h3>
+    <p>Interface à balayage avec synthèse vocale et structure en nœuds.</p>
+    <span>2025</span>
+  </div>
 </div>
 
-<script src="script.js"></script>
-</body>
-</html>
+<!-- 2025 - PMR -->
+<div class="timeline-block" style="left: 60%;">
+  <div class="dot"></div>
+  <div class="card">
+    <img src="images/guidage.jpg">
+    <h3>Guidage PMR</h3>
+    <p>Navigation accessible avec gestion des obstacles et données géographiques.</p>
+    <span>2025</span>
+  </div>
+</div>
+
+<!-- 2026 -->
+<div class="timeline-block" style="left: 90%;">
+  <div class="dot"></div>
+  <div class="card">
+    <img src="images/robot.jpg">
+    <h3>CarryBot</h3>
+    <p>Robot mobile d’assistance et autonomie.</p>
+    <span>2026</span>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
