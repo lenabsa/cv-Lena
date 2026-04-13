@@ -25,75 +25,337 @@
 <div class="pt-20">
 
 <!-- HERO -->
-<section class="text-center bg-gradient-to-r from-indigo-600 to-blue-700 text-white py-20">
-  <h1 class="text-4xl font-bold">Lena Bessa</h1>
-  <p class="mt-4 text-xl">Technologies du handicap · IHM · Accessibilité</p>
-</section>
+<section class="bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-800 text-white py-28">
 
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 px-6">
+
+    <!-- PHOTO GRANDE -->
+    <div class="flex-shrink-0">
+      <img 
+        src="images/LENA.JPG" 
+        alt="Lena Bessa"
+        class="w-60 h-60 md:w-80 md:h-80 rounded-3xl object-cover border-8 border-white/20 shadow-2xl hover:scale-105 transition duration-500"
+      >
+    </div>
+
+    <!-- TEXTE -->
+    <div class="text-center md:text-left max-w-2xl">
+
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+        Lena Bessa
+      </h1>
+
+      <p class="mt-4 text-2xl font-semibold text-blue-200">
+        Technologies du handicap · IHM · Accessibilité
+      </p>
+
+      <p class="mt-8 text-lg leading-relaxed text-gray-100">
+        Étudiante en Master MIASHS spécialisée en technologies du handicap, 
+        je conçois des solutions numériques accessibles intégrant interaction 
+        humain-machine, cognition et inclusion afin de renforcer l’autonomie 
+        des utilisateurs.
+      </p>
+
+      <!-- CTA -->
+      <div class="mt-8">
+        <a href="#projets" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">
+          Voir mes projets
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 <!-- TIMELINE -->
 <section id="projets" class="py-20">
-<h2 class="text-3xl font-bold text-center mb-16">Parcours & Projets</h2>
-
+<h2 class="text-4xl font-extrabold text-center mb-20 text-gray-800">
+  Parcours & Projets
+</h2>
 <div class="timeline">
 
+  <!-- CarryBot -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3 class="text-2xl font-bold text-indigo-600 mb-3">CarryBot – Robot compagnon mobile</h3>
+      <p>
+        Conception et prototypage d’un robot mobile à trois roues destiné à
+        assister les personnes dans leurs déplacements en intérieur.
+      </p>
+      <p>
+        Développement d’un système embarqué permettant le transport autonome
+        de charges légères, avec une réflexion centrée sur l’accessibilité
+        et l’autonomie des utilisateurs.
+      </p>
+      <ul class="mt-2 text-sm">
+        <li>• Modélisation 3D et prototypage</li>
+        <li>• Interaction homme-machine</li>
+        <li>• Assistance à la mobilité</li>
+      </ul>
+      <span class="block mt-2">2026</span>
+    </div>
+
+    <div class="timeline-center"></div>
+
+    <div class="timeline-media">
+      <img src="images/carryBot.jpg">
+    </div>
+  </div>
+
+  <!-- Green Mate -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3 class="text-2xl font-bold text-indigo-600 mb-3">Green-Mate – Plante connectée (IoT)</h3>
+      <p>
+        Conception d’un système électronique intelligent permettant de surveiller
+        en temps réel les paramètres environnementaux d’une plante.
+      </p>
+      <p>
+        Acquisition et traitement de données (humidité, température, lumière),
+        avec restitution d’informations à l’utilisateur pour une interaction simplifiée.
+      </p>
+      <ul class="mt-2 text-sm">
+        <li>• Capteurs environnementaux</li>
+        <li>• Acquisition de données</li>
+        <li>• Système interactif</li>
+      </ul>
+      <span class="block mt-2">2026</span>
+    </div>
+
+    <div class="timeline-center"></div>
+
+    <div class="timeline-media">
+      <img src="images/green.jpeg">
+    </div>
+  </div>
+
+  <!-- Clavier CAA -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3 class="text-2xl font-bold text-indigo-600 mb-3">Clavier directionnel CAA (Java Swing)</h3>
+      <p>
+        Développement d’une interface de communication alternative et améliorée
+        destinée aux personnes en situation de handicap moteur sévère.
+      </p>
+      <p>
+        Implémentation d’un système de balayage automatique avec navigation
+        directionnelle et intégration d’une synthèse vocale pour faciliter l’expression.
+      </p>
+      <ul class="mt-2 text-sm">
+        <li>• Java Swing (IHM)</li>
+        <li>• Synthèse vocale (MaryTTS)</li>
+        <li>• Interaction adaptative</li>
+      </ul>
+      <span class="block mt-2">2025</span>
+    </div>
+
+    <div class="timeline-center"></div>
+
+    <div class="timeline-media">
+      <!-- image future -->
+    </div>
+  </div>
+
+  <!-- Guidage PMR -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3 class="text-2xl font-bold text-indigo-600 mb-3">Application de guidage PMR (Web / Symfony)</h3>
+      <p>
+        Conception et développement d’une application web permettant
+        la navigation accessible sur un campus universitaire.
+      </p>
+      <p>
+        Intégration d’un système de cartographie, gestion des obstacles
+        (ascenseurs, accès bloqués) et personnalisation des trajets selon
+        les besoins des utilisateurs.
+      </p>
+      <ul class="mt-2 text-sm">
+        <li>• Symfony (backend)</li>
+        <li>• Gestion des données géographiques</li>
+        <li>• Accessibilité numérique</li>
+      </ul>
+      <span class="block mt-2">2025</span>
+    </div>
+
+    <div class="timeline-center"></div>
+
+    <div class="timeline-media">
+      <!-- image future -->
+    </div>
+  </div>
+
+  <!-- Projets complémentaires -->
+
+      <!-- TETRIS -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3 class="text-2xl font-bold text-indigo-600 mb-3">Jeu Tetris (Android)</h3>
+      <p>
+          Développement d’un jeu mobile en Java avec Android Studio,
+          intégrant gestion des collisions, score et animations en temps réel.
+      </p>
+
+      </p>
+      <ul class="mt-2 text-sm">
+        <li>• Java</li>
+        <li>• Android Studio</li>
+        <li>• Gaming</li>
+      </ul>
+      <span class="block mt-2">2024</span>
+    </div>
+
+    <div class="timeline-center"></div>
+
+    <div class="timeline-media">
+      <!-- image future -->
+    </div>
+  </div>
+  <!-- CHAT -->
+
+<div class="timeline-item">
+    <div class="timeline-content">
+      <h4 class="text-xl font-semibold text-indigo-600 mb-2">Chat temps réel (WebSocket)</h4>
+        <p>
+          Mise en place d’une application de messagerie instantanée utilisant
+          WebSocket pour la communication en temps réel entre utilisateurs.
+        </p>
+
+      
+      <ul class="mt-2 text-sm">
+        <li>• JavaScript (Node.js)</li>
+        <li>• socket.io</li>
+        <li>• ws</li>
+      </ul>
+      <span class="block mt-2">2023</span>
+    </div>
+
+    <div class="timeline-center"></div>
+
+    <div class="timeline-media">
+      <!-- image future -->
+    </div>
+  </div>
+   
+    <!-- TODO APP -->
+
+<div class="timeline-item">
+    <div class="timeline-content">
+      <h4 class="text-xl font-semibold text-indigo-600 mb-2">Application de gestion de tâches</h4>
+        <p>
+          Conception d’une application mobile permettant la planification
+          et le suivi de tâches avec gestion des données utilisateur.
+        </p>
+
+      <ul class="mt-2 text-sm">
+        <li>• Python</li>
+        <li>• Education</li>
+      </ul>
+      <span class="block mt-2">2022</span>
+    </div>
+
+    <div class="timeline-center"></div>
+
+    <div class="timeline-media">
+      <!-- image future -->
+    </div>
+  </div>
+
+    
+</div>
+</section>
+
+
+
+
+<!-- ===== PARCOURS ACADÉMIQUE ===== -->
+
+<!-- Master -->
+<section id="formation" class="py-20">
+  <h2 class="text-4xl font-extrabold text-center mb-20 text-gray-800">
+    Parcours ACADÉMIQUE
+  </h2>
+<div class="timeline">
 <div class="timeline-item">
   <div class="timeline-content">
-    <h3>CarryBot - Robot compagnon</h3>
-    <p>Robot mobile d’assistance.</p>
-    <span>2026</span>
+    <h3 class="text-2xl font-bold text-indigo-700 mb-3">
+      Master MIASHS – Technologie et Handicap
+    </h3>
+
+    <p>
+      Formation spécialisée en conception de solutions numériques accessibles,
+      intégrant interaction humain-machine, cognition et technologies d’assistance.
+    </p>
+
+    <ul class="mt-2 text-sm">
+      <li>• Accessibilité numérique (RGAA)</li>
+      <li>• Interaction Homme-Machine (IHM)</li>
+      <li>• Technologies de compensation (CAA, capteurs)</li>
+    </ul>
+
+    <span class="block mt-2 font-semibold text-gray-600">
+      2024 – 2026 - Université Paris 8
+    </span>
   </div>
 
   <div class="timeline-center"></div>
 
   <div class="timeline-media">
-    <img src="images/carryBot.jpg">
+    <!-- image optionnelle -->
   </div>
 </div>
 
+<!-- Licence -->
 <div class="timeline-item">
   <div class="timeline-content">
-    <h3>Green-Mate - Plante connectée (électronique / IoT)</h3>
-    <p>Système de surveillance (humidité, environnement)</p>
-    <span>2026</span>
+    <h3 class="text-2xl font-bold text-indigo-700 mb-3">
+      Licence Informatique
+    </h3>
+
+    <p>
+      Acquisition des fondamentaux en développement logiciel, structures de données,
+      et conception d’applications.
+    </p>
+
+    <ul class="mt-2 text-sm">
+      <li>• Programmation (Java, Python)</li>
+      <li>• Algorithmique</li>
+      <li>• Bases de données</li>
+      <li>• Statistique & probabilités</li>
+    </ul>
+
+    <span class="block mt-2 font-semibold text-gray-600">
+      2021 – 2024 - Université de Tours
+    </span>
   </div>
 
   <div class="timeline-center"></div>
 
   <div class="timeline-media">
-    <img src="images/green.jpeg">
   </div>
 </div>
 
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Clavier CAA</h3>
-      <p>Interface accessible avec balayage et synthèse vocale.</p>
-      <span>2025</span>
-    </div>
-    <div class="timeline-center"></div>
-    <div class="timeline-media"></div>
+<!-- Bac -->
+<div class="timeline-item">
+  <div class="timeline-content">
+    <h3 class="text-2xl font-bold text-indigo-700 mb-3">
+      Baccalauréat Mathématiques
+    </h3>
+
+    <p>
+      Formation scientifique avec bases en mathématiques et raisonnement logique,
+      ayant orienté vers les études en informatique.
+    </p>
+
+    <span class="block mt-2 font-semibold text-gray-600">
+      2020
+    </span>
   </div>
 
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Guidage PMR</h3>
-      <p>Application web de navigation accessible sur campus.</p>
-      <span>2025</span>
-    </div>
-    <div class="timeline-center"></div>
-    <div class="timeline-media"></div>
-  </div>
+  <div class="timeline-center"></div>
 
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Projets complémentaires</h3>
-      <p>Tetris Android, chat WebSocket, IoT, app mobile.</p>
-      <span>2024</span>
-    </div>
-    <div class="timeline-center"></div>
-    <div class="timeline-media"></div>
+  <div class="timeline-media">
   </div>
-
+  </div>
 </div>
 </section>
 
