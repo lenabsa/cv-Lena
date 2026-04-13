@@ -1,58 +1,111 @@
-<section id="projets" class="py-20 bg-gray-50">
-<h2 class="text-3xl font-bold text-center mb-16">Timeline des projets</h2>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio – Lena Bessa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="max-w-5xl mx-auto relative">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<!-- Ligne -->
-<div class="absolute top-1/2 left-0 w-full h-1 bg-blue-500"></div>
+<body class="bg-gray-50 text-gray-900">
 
-<!-- Timeline -->
-<div class="relative flex justify-between items-center">
-
-<!-- 2024 -->
-<div class="timeline-block" style="left: 0%;">
-  <div class="dot"></div>
-  <div class="card">
-    <img src="images/chat.jpg">
-    <h3>Chat temps réel</h3>
-    <p>Plateforme de communication en ligne avec gestion temps réel.</p>
-    <span>2024</span>
+<!-- NAV -->
+<nav class="fixed top-0 w-full bg-white shadow z-40">
+  <div class="max-w-6xl mx-auto flex justify-between p-4">
+    <span class="font-bold">Lena Bessa</span>
+    <div class="space-x-4">
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
-</div>
+</nav>
 
-<!-- 2025 - CAA -->
-<div class="timeline-block" style="left: 40%;">
-  <div class="dot"></div>
-  <div class="card">
-    <img src="images/clavier.jpg">
-    <h3>Clavier CAA</h3>
-    <p>Interface à balayage avec synthèse vocale et structure en nœuds.</p>
-    <span>2025</span>
-  </div>
-</div>
+<div class="pt-20">
 
-<!-- 2025 - PMR -->
-<div class="timeline-block" style="left: 60%;">
-  <div class="dot"></div>
-  <div class="card">
-    <img src="images/guidage.jpg">
-    <h3>Guidage PMR</h3>
-    <p>Navigation accessible avec gestion des obstacles et données géographiques.</p>
-    <span>2025</span>
-  </div>
-</div>
+<!-- HERO -->
+<section class="text-center bg-gradient-to-r from-indigo-600 to-blue-700 text-white py-20">
+  <h1 class="text-4xl font-bold">Lena Bessa</h1>
+  <p class="mt-4 text-xl">Technologies du handicap · IHM · Accessibilité</p>
+</section>
 
-<!-- 2026 -->
-<div class="timeline-block" style="left: 90%;">
-  <div class="dot"></div>
-  <div class="card">
-    <img src="images/robot.jpg">
-    <h3>CarryBot</h3>
-    <p>Robot mobile d’assistance et autonomie.</p>
+<!-- TIMELINE -->
+<section id="projets" class="py-20">
+<h2 class="text-3xl font-bold text-center mb-16">Parcours & Projets</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+  <div class="timeline-content">
+    <h3>CarryBot - Robot compagnon</h3>
+    <p>Robot mobile d’assistance.</p>
     <span>2026</span>
   </div>
+
+  <div class="timeline-center"></div>
+
+  <div class="timeline-media">
+    <img src="images/carryBot.jpg">
+  </div>
 </div>
 
+<div class="timeline-item">
+  <div class="timeline-content">
+    <h3>Green-Mate - Plante connectée (électronique / IoT)</h3>
+    <p>Système de surveillance (humidité, environnement)</p>
+    <span>2026</span>
+  </div>
+
+  <div class="timeline-center"></div>
+
+  <div class="timeline-media">
+    <img src="images/green.jpeg">
+  </div>
 </div>
+
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Clavier CAA</h3>
+      <p>Interface accessible avec balayage et synthèse vocale.</p>
+      <span>2025</span>
+    </div>
+    <div class="timeline-center"></div>
+    <div class="timeline-media"></div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Guidage PMR</h3>
+      <p>Application web de navigation accessible sur campus.</p>
+      <span>2025</span>
+    </div>
+    <div class="timeline-center"></div>
+    <div class="timeline-media"></div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Projets complémentaires</h3>
+      <p>Tetris Android, chat WebSocket, IoT, app mobile.</p>
+      <span>2024</span>
+    </div>
+    <div class="timeline-center"></div>
+    <div class="timeline-media"></div>
+  </div>
+
 </div>
 </section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-16 text-center">
+<h2 class="text-3xl font-bold mb-6">Contact</h2>
+<p>Email : lenabessa02@gmail.com</p>
+<p>GitHub : github.com/lenabsa</p>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

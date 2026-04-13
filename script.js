@@ -1,12 +1,16 @@
-let fontSize = 100;
-const pageRoot = document.getElementById('page-root');
+const items = document.querySelectorAll(".timeline-item");
 
-function increaseFont() {
-  fontSize += 10;
-  pageRoot.style.fontSize = fontSize + "%";
+function showTimeline() {
+  const trigger = window.innerHeight * 0.85;
+
+  items.forEach(item => {
+    const top = item.getBoundingClientRect().top;
+
+    if (top < trigger) {
+      item.classList.add("visible");
+    }
+  });
 }
 
-function decreaseFont() {
-  fontSize -= 10;
-  pageRoot.style.fontSize = fontSize + "%";
-}
+window.addEventListener("scroll", showTimeline);
+showTimeline();
